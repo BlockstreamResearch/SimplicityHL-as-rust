@@ -1,6 +1,6 @@
 [package]
 name = "simfony-as-rust"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Christian Lewe <ch_lewe@agdsn.me>"]
 description = "Tools for working with Simfony as literal Rust"
