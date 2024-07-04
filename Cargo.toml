@@ -1,0 +1,10 @@
+[package]
+name = "simfony-as-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Tools for working with Simfony as literal Rust"
+license = "CC0-1.0"
+repository = "https://github.com/uncomputable/simfony-as-rust"
+
+[dependencies]
+either = "1.13.0"
