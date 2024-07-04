@@ -2,6 +2,28 @@
 //!
 //! Currently for documentation purposes only.
 
+pub mod arithmetic;
+pub mod bitcoin_without_primitives;
+pub mod digital_signatures;
+pub mod elliptic_curve_functions;
+pub mod hash_functions;
+pub mod issuance;
+pub mod multi_bit_logic;
+pub mod signature_hash_modes;
+pub mod time_locks;
+pub mod transaction;
+
+pub use arithmetic::*;
+pub use bitcoin_without_primitives::*;
+pub use digital_signatures::*;
+pub use elliptic_curve_functions::*;
+pub use hash_functions::*;
+pub use issuance::*;
+pub use multi_bit_logic::*;
+pub use signature_hash_modes::*;
+pub use time_locks::*;
+pub use transaction::*;
+
 use either::Either;
 use std::marker::PhantomData;
 
