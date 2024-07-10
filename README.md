@@ -1,8 +1,8 @@
 # Interface between Simfony as Rust
 
 [![GitHub](https://img.shields.io/badge/github-repo-blue.svg)](https://github.com/uncomputable/simfony-as-rust)
-[![crates.io](https://img.shields.io/crates/v/konbaato.svg)](https://crates.io/crates/simfony-as-rust)
-[![docs.rs](https://docs.rs/konbaato/badge.svg)](https://docs.rs/simfony-as-rust)
+[![crates.io](https://img.shields.io/crates/v/simfony-as-rust.svg)](https://crates.io/crates/simfony-as-rust)
+[![docs.rs](https://docs.rs/simfony-as-rust/badge.svg)](https://docs.rs/simfony-as-rust)
 
 The [Simfony](https://github.com/BlockstreamResearch/simfony) language feels very similar to Rust. This crate provides tools to work with Simfony as literal Rust.
 
