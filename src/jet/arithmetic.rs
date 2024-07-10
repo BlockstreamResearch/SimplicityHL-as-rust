@@ -399,12 +399,12 @@ pub fn multiply_16(a: u16, b: u16) -> u32 {
     todo!()
 }
 
-/// Multiply two integers. The output is a 32-bit integer.
+/// Multiply two integers. The output is a 64-bit integer.
 pub fn multiply_32(a: u32, b: u32) -> u64 {
     todo!()
 }
 
-/// Multiply two integers. The output is a 64-bit integer.
+/// Multiply two integers. The output is a 128-bit integer.
 pub fn multiply_64(a: u64, b: u64) -> u128 {
     todo!()
 }

@@ -25,7 +25,7 @@ pub fn calculate_explicit_token(a: u256) -> ExplicitAsset {
 }
 
 /// Calculate the entropy value from a given outpoint and contract hash.
-/// 
+///
 /// This entropy value is used to compute issued asset and token IDs.
 pub fn calculate_issuance_entropy(a: Outpoint, b: u256) -> u256 {
     todo!()
