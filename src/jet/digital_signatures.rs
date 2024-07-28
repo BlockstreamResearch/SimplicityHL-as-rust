@@ -10,11 +10,6 @@
 use super::*;
 
 /// Assert that a Schnorr signature matches a public key and message, or panic otherwise.
-pub fn bip_0340_verify(a: Pubkey, b: Message, c: Signature) {
-    todo!()
-}
-
-/// Assert that a Schnorr signature matches a public key and message, using a custom sighash mode. This jet should not be used directly.
-pub fn check_sig_verify(a: Pubkey, b: Message64, c: Signature) {
+pub fn bip_0340_verify(a: (Pubkey, Message), b: Signature) {
     todo!()
 }

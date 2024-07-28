@@ -55,12 +55,12 @@ pub fn and_64(a: u64, b: u64) -> u64 {
 }
 
 /// Bitwise CHOICE of a bit and two 1-bit values.  If the bit is true, then take the first value, else take the second value.
-pub fn ch_1(a: u1, b: (u1, u1)) -> u1 {
+pub fn ch_1(a: u1, b: u1, c: u1) -> u1 {
     todo!()
 }
 
 /// Bitwise CHOICE of a bit and two 8-bit values.  If the bit is true, then take the first value, else take the second value.
-pub fn ch_8(a: u8, b: (u8, u8)) -> u8 {
+pub fn ch_8(a: u8, b: u8, c: u8) -> u8 {
     todo!()
 }
 
@@ -530,22 +530,22 @@ pub fn left_shift_64(a: u8, b: u64) -> u64 {
 }
 
 /// Left-shift an 8-bit value by the given amount. Bits are filled with the given bit.
-pub fn left_shift_with_8(a: u1, b: (u4, u8)) -> u8 {
+pub fn left_shift_with_8(a: u1, b: u4, c: u8) -> u8 {
     todo!()
 }
 
 /// Left-shift a 16-bit value by the given amount. Bits are filled with the given bit.
-pub fn left_shift_with_16(a: u1, b: (u4, u16)) -> u16 {
+pub fn left_shift_with_16(a: u1, b: u4, c: u16) -> u16 {
     todo!()
 }
 
 /// Left-shift a 32-bit value by the given amount. Bits are filled with the given bit.
-pub fn left_shift_with_32(a: u1, b: (u8, u32)) -> u32 {
+pub fn left_shift_with_32(a: u1, b: u8, c: u32) -> u32 {
     todo!()
 }
 
 /// Left-shift a 64-bit value by the given amount. Bits are filled with the given bit.
-pub fn left_shift_with_64(a: u1, b: (u8, u64)) -> u64 {
+pub fn left_shift_with_64(a: u1, b: u8, c: u64) -> u64 {
     todo!()
 }
 
@@ -665,12 +665,12 @@ pub fn low_64() -> u64 {
 }
 
 /// Bitwise MAJORITY of three 1-bit values. The output bit is false if two or more input bits are false, and true otherwise.
-pub fn maj_1(a: u1, b: (u1, u1)) -> u1 {
+pub fn maj_1(a: u1, b: u1, c: u1) -> u1 {
     todo!()
 }
 
 /// Bitwise MAJORITY of three 1-bit values. The output bit is false if two or more input bits are false, and true otherwise.
-pub fn maj_8(a: u8, b: (u8, u8)) -> u8 {
+pub fn maj_8(a: u8, b: u8, c: u8) -> u8 {
     todo!()
 }
 
@@ -885,22 +885,22 @@ pub fn right_shift_64(a: u8, b: u64) -> u64 {
 }
 
 /// Right-shift an 8-bit value by the given amount. Bits are filled with the given bit.
-pub fn right_shift_with_8(a: u1, b: (u4, u8)) -> u8 {
+pub fn right_shift_with_8(a: u1, b: u4, c: u8) -> u8 {
     todo!()
 }
 
 /// Right-shift a 16-bit value by the given amount. Bits are filled with the given bit.
-pub fn right_shift_with_16(a: u1, b: (u4, u16)) -> u16 {
+pub fn right_shift_with_16(a: u1, b: u4, c: u16) -> u16 {
     todo!()
 }
 
 /// Right-shift a 32-bit value by the given amount. Bits are filled with the given bit.
-pub fn right_shift_with_32(a: u1, b: (u8, u32)) -> u32 {
+pub fn right_shift_with_32(a: u1, b: u8, c: u32) -> u32 {
     todo!()
 }
 
 /// Right-shift a 64-bit value by the given amount. Bits are filled with the given bit.
-pub fn right_shift_with_64(a: u1, b: (u8, u64)) -> u64 {
+pub fn right_shift_with_64(a: u1, b: u8, c: u64) -> u64 {
     todo!()
 }
 
@@ -1019,11 +1019,6 @@ pub fn some_64(a: u64) -> bool {
     todo!()
 }
 
-/// Assert that a bit is true or panic otherwise.
-pub fn verify(a: bool) {
-    todo!()
-}
-
 /// Bitwise XOR of two 1-bit  values.
 pub fn xor_1(a: u1, b: u1) -> u1 {
     todo!()
@@ -1050,12 +1045,12 @@ pub fn xor_64(a: u64, b: u64) -> u64 {
 }
 
 /// Bitwise XOR of three 1-bit  values.
-pub fn xor_xor_1(a: u1, b: (u1, u1)) -> u1 {
+pub fn xor_xor_1(a: u1, b: u1, c: u1) -> u1 {
     todo!()
 }
 
 /// Bitwise XOR of three 8-bit  values.
-pub fn xor_xor_8(a: u8, b: (u8, u8)) -> u8 {
+pub fn xor_xor_8(a: u8, b: u8, c: u8) -> u8 {
     todo!()
 }
 

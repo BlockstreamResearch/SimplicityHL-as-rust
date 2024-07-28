@@ -110,22 +110,22 @@ pub fn divides_64(a: u64, b: u64) -> bool {
 }
 
 /// Add two integers. Take a carry-in and return a carry-out.
-pub fn full_add_8(a: bool, b: (u8, u8)) -> (bool, u8) {
+pub fn full_add_8(a: bool, b: u8, c: u8) -> (bool, u8) {
     todo!()
 }
 
 /// Add two integers. Take a carry-in and return a carry-out.
-pub fn full_add_16(a: bool, b: (u16, u16)) -> (bool, u16) {
+pub fn full_add_16(a: bool, b: u16, c: u16) -> (bool, u16) {
     todo!()
 }
 
 /// Add two integers. Take a carry-in and return a carry-out.
-pub fn full_add_32(a: bool, b: (u32, u32)) -> (bool, u32) {
+pub fn full_add_32(a: bool, b: u32, c: u32) -> (bool, u32) {
     todo!()
 }
 
 /// Add two integers. Take a carry-in and return a carry-out.
-pub fn full_add_64(a: bool, b: (u64, u64)) -> (bool, u64) {
+pub fn full_add_64(a: bool, b: u64, c: u64) -> (bool, u64) {
     todo!()
 }
 
@@ -190,22 +190,22 @@ pub fn full_multiply_64(a: (u64, u64), b: (u64, u64)) -> u128 {
 }
 
 /// Subtract the second integer from the first integer. Take a borrow-in and return a borrow-out.
-pub fn full_subtract_8(a: bool, b: (u8, u8)) -> (bool, u8) {
+pub fn full_subtract_8(a: bool, b: u8, c: u8) -> (bool, u8) {
     todo!()
 }
 
 /// Subtract the second integer from the first integer. Take a borrow-in and return a borrow-out.
-pub fn full_subtract_16(a: bool, b: (u16, u16)) -> (bool, u16) {
+pub fn full_subtract_16(a: bool, b: u16, c: u16) -> (bool, u16) {
     todo!()
 }
 
 /// Subtract the second integer from the first integer. Take a borrow-in and return a borrow-out.
-pub fn full_subtract_32(a: bool, b: (u32, u32)) -> (bool, u32) {
+pub fn full_subtract_32(a: bool, b: u32, c: u32) -> (bool, u32) {
     todo!()
 }
 
 /// Subtract the second integer from the first integer. Take a borrow-in and return a borrow-out.
-pub fn full_subtract_64(a: bool, b: (u64, u64)) -> (bool, u64) {
+pub fn full_subtract_64(a: bool, b: u64, c: u64) -> (bool, u64) {
     todo!()
 }
 
@@ -330,22 +330,22 @@ pub fn max_64(a: u64, b: u64) -> u64 {
 }
 
 /// Return the median of three integers.
-pub fn median_8(a: u8, b: (u8, u8)) -> u8 {
+pub fn median_8(a: u8, b: u8, c: u8) -> u8 {
     todo!()
 }
 
 /// Return the median of three integers.
-pub fn median_16(a: u16, b: (u16, u16)) -> u16 {
+pub fn median_16(a: u16, b: u16, c: u16) -> u16 {
     todo!()
 }
 
 /// Return the median of three integers.
-pub fn median_32(a: u32, b: (u32, u32)) -> u32 {
+pub fn median_32(a: u32, b: u32, c: u32) -> u32 {
     todo!()
 }
 
 /// Return the median of three integers.
-pub fn median_64(a: u64, b: (u64, u64)) -> u64 {
+pub fn median_64(a: u64, b: u64, c: u64) -> u64 {
     todo!()
 }
 

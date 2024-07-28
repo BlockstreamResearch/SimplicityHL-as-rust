@@ -11,7 +11,7 @@
 use super::*;
 
 /// Update the given 256-bit midstate by running the SHA256 block compression function, using the given 512-bit block.
-pub fn sha_256_block(a: u256, b: (u256, u256)) -> u256 {
+pub fn sha_256_block(a: u256, b: u256, c: u256) -> u256 {
     todo!()
 }
 

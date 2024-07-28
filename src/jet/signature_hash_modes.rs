@@ -17,7 +17,7 @@ pub fn annex_hash(a: Ctx8, b: Option<u256>) -> Ctx8 {
 }
 
 /// Continue a SHA256 hash with the serialization of a confidential asset followed by the serialization of a amount.
-pub fn asset_amount_hash(a: Ctx8, b: (Asset1, Amount1)) -> Ctx8 {
+pub fn asset_amount_hash(a: Ctx8, b: Asset1, c: Amount1) -> Ctx8 {
     todo!()
 }
 
@@ -178,7 +178,7 @@ pub fn nonce_hash(a: Ctx8, b: Option<Nonce>) -> Ctx8 {
 /// - If the input is a pegin, then the byte `0x01` followed by the given parent genesis hash (32 bytes).
 /// - The input's previous transaction id (32 bytes).
 /// - The input's previous transaction index in big endian format (4 bytes).
-pub fn outpoint_hash(a: Ctx8, b: (Option<u256>, Outpoint)) -> Ctx8 {
+pub fn outpoint_hash(a: Ctx8, b: Option<u256>, c: Outpoint) -> Ctx8 {
     todo!()
 }
 

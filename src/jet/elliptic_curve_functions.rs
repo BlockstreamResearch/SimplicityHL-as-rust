@@ -151,17 +151,17 @@ pub fn generate(a: Scalar) -> Gej {
 }
 
 /// Compute the the linear combination `b * a + c * g` for point `b` and scalars `a` and `c`, where `g` is the generator point.
-pub fn linear_combination_1(a: Scalar, b: Gej, c: Scalar) -> Gej {
+pub fn linear_combination_1(a: (Scalar, Gej), b: Scalar) -> Gej {
     todo!()
 }
 
 /// Check if point `b` is equal to the linear combination `a.0 * a.1 + a.2 * g`, where `g` is the generator point.
-pub fn linear_verify_1(a: (Scalar, Ge, Scalar), b: Ge) {
+pub fn linear_verify_1(a: ((Scalar, Ge), Scalar), b: Ge) {
     todo!()
 }
 
 /// Check if point `b` is equal to the linear combination `a.0 * a.1 + a.2 * g`, where `g` is the generator point. Fails if the points cannot be decompressed.
-pub fn point_verify_1(a: (Scalar, Point, Scalar), b: Point) {
+pub fn point_verify_1(a: ((Scalar, Point), Scalar), b: Point) {
     todo!()
 }
 
