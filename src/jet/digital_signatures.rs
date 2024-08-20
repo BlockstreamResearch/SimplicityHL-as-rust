@@ -9,7 +9,10 @@
 
 use super::*;
 
-/// Assert that a Schnorr signature matches a public key and message, or panic otherwise.
+/// Assert that a Schnorr signature matches a public key and message.
+///
+/// ## Panics
+/// The assertion fails.
 pub fn bip_0340_verify(a: (Pubkey, Message), b: Signature) {
     todo!()
 }

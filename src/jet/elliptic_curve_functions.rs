@@ -10,7 +10,10 @@
 
 use super::*;
 
-/// Decompress a point into affine coordinates.  Fails if the x-coordinate is not on the curve, but succeeds even if the x-coordinate is not normalized.
+/// Decompress a point into affine coordinates.
+///
+/// - Return `None` if the x-coordinate is not on the curve.
+/// - Return `Some(ge)` even if the x-coordinate is not normalized.
 pub fn decompress(a: Point) -> Option<Ge> {
     todo!()
 }
@@ -155,12 +158,19 @@ pub fn linear_combination_1(a: (Scalar, Gej), b: Scalar) -> Gej {
     todo!()
 }
 
-/// Check if point `b` is equal to the linear combination `a.0 * a.1 + a.2 * g`, where `g` is the generator point.
+/// Assert that a point `b` is equal to the linear combination `a.0 * a.1 + a.2 * g`, where `g` is the generator point.
+///
+/// ## Panics
+/// The assertion fails.
 pub fn linear_verify_1(a: ((Scalar, Ge), Scalar), b: Ge) {
     todo!()
 }
 
-/// Check if point `b` is equal to the linear combination `a.0 * a.1 + a.2 * g`, where `g` is the generator point. Fails if the points cannot be decompressed.
+/// Assert that a point `b` is equal to the linear combination `a.0 * a.1 + a.2 * g`, where `g` is the generator point.
+///
+/// ## Panics
+/// - The assertion fails.
+/// - Fails if the points cannot be decompressed.
 pub fn point_verify_1(a: ((Scalar, Point), Scalar), b: Point) {
     todo!()
 }

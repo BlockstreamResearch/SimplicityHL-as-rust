@@ -9,22 +9,34 @@
 
 use super::*;
 
-/// Assert that the value returned by [`check_lock_distance`] is greater than or equal to the given value.
+/// Assert that the value returned by [`tx_lock_distance`] is greater than or equal to the given value.
+///
+/// ## Panics
+/// The assertion fails.
 pub fn check_lock_distance(a: Distance) {
     todo!()
 }
 
-/// Assert that the value returned by [`check_lock_duration`] is greater than or equal to the given value.
+/// Assert that the value returned by [`tx_lock_duration`] is greater than or equal to the given value.
+///
+/// ## Panics
+/// The assertion fails
 pub fn check_lock_duration(a: Duration) {
     todo!()
 }
 
-/// Assert that the value returned by [`tx_lock_height`]      is greater than or equal to the given value.
+/// Assert that the value returned by [`tx_lock_height`]   is greater than or equal to the given value.
+///
+/// ## Panics
+/// The assertion fails.
 pub fn check_lock_height(a: Height) {
     todo!()
 }
 
-/// Assert that the value returned by [`tx_lock_time`]        is greater than or equal to the given value.
+/// Assert that the value returned by [`tx_lock_time`]     is greater than or equal to the given value.
+///
+/// ## Panics
+/// The assertion fails.
 pub fn check_lock_time(a: Time) {
     todo!()
 }

@@ -89,22 +89,22 @@ pub fn divide_64(a: u64, b: u64) -> u64 {
     todo!()
 }
 
-/// Check if the first integer divides the second integer.
+/// Check if the first integer is divisible by the second integer.
 pub fn divides_8(a: u8, b: u8) -> bool {
     todo!()
 }
 
-/// Check if the first integer divides the second integer.
+/// Check if the first integer is divisible by the second integer.
 pub fn divides_16(a: u16, b: u16) -> bool {
     todo!()
 }
 
-/// Check if the first integer divides the second integer.
+/// Check if the first integer is divisible by the second integer.
 pub fn divides_32(a: u32, b: u32) -> bool {
     todo!()
 }
 
-/// Check if the first integer divides the second integer.
+/// Check if the first integer is divisible by the second integer.
 pub fn divides_64(a: u64, b: u64) -> bool {
     todo!()
 }
@@ -169,22 +169,22 @@ pub fn full_increment_64(a: bool, b: u64) -> (bool, u64) {
     todo!()
 }
 
-/// Helper for multiplying integers. Take the sum of the first pair of integers and add the product of the second pair.
+/// Helper for multiplying integers. Take the product of the first pair of integers and add the sum of the second pair.
 pub fn full_multiply_8(a: (u8, u8), b: (u8, u8)) -> u16 {
     todo!()
 }
 
-/// Helper for multiplying integers. Take the sum of the first pair of integers and add the product of the second pair.
+/// Helper for multiplying integers. Take the product of the first pair of integers and add the sum of the second pair.
 pub fn full_multiply_16(a: (u16, u16), b: (u16, u16)) -> u32 {
     todo!()
 }
 
-/// Helper for multiplying integers. Take the sum of the first pair of integers and add the product of the second pair.
+/// Helper for multiplying integers. Take the product of the first pair of integers and add the sum of the second pair.
 pub fn full_multiply_32(a: (u32, u32), b: (u32, u32)) -> u64 {
     todo!()
 }
 
-/// Helper for multiplying integers. Take the sum of the first pair of integers and add the product of the second pair.
+/// Helper for multiplying integers. Take the product of the first pair of integers and add the sum of the second pair.
 pub fn full_multiply_64(a: (u64, u64), b: (u64, u64)) -> u128 {
     todo!()
 }
