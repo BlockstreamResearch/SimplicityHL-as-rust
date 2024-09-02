@@ -63,3 +63,8 @@ pub fn issuance_entropy(a: u32) -> Option<Option<u256>> {
 pub fn issuance_token(a: u32) -> Option<Option<ExplicitAsset>> {
     todo!()
 }
+
+/// Return the asset for Liquid Bitcoin.
+pub fn lbtc_asset() -> u256 {
+    todo!()
+}

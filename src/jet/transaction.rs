@@ -334,6 +334,11 @@ pub fn total_fee(a: ExplicitAsset) -> ExplicitAmount {
     todo!()
 }
 
+/// Return the transaction ID.
+pub fn transaction_id() -> u256 {
+    todo!()
+}
+
 /// Return the version number of the transaction.
 pub fn version() -> u32 {
     todo!()

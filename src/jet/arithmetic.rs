@@ -69,6 +69,20 @@ pub fn div_mod_64(a: u64, b: u64) -> (u64, u64) {
     todo!()
 }
 
+/// Divide the 128-bit integer `a` by the 64-bit integer `b`.
+/// Return a tuple of the quotient `q` and the remainer `r`.
+///
+/// Use this jet to recursively define wide integer divisions.
+///
+/// ## Preconditions
+/// 1. `q` < 2^64
+/// 2. 2^63 ≤ `b`
+///
+/// Return `(u64::MAX, u64::MAX)` when the preconditions are not satisfied.
+pub fn div_mod_128_64(a: u128, b: u64) -> (u64, u64) {
+    todo!()
+}
+
 /// Divide the first integer by the second integer.
 pub fn divide_8(a: u8, b: u8) -> u8 {
     todo!()

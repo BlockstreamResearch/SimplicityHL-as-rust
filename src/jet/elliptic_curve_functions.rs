@@ -153,6 +153,13 @@ pub fn generate(a: Scalar) -> Gej {
     todo!()
 }
 
+///  A cryptographic hash function that results in a point on the secp256k1 curve.
+///
+/// This matches the hash function used to map asset IDs to asset commitments.
+pub fn hash_to_curve(a: u256) -> Ge {
+    todo!()
+}
+
 /// Compute the the linear combination `b * a + c * g` for point `b` and scalars `a` and `c`, where `g` is the generator point.
 pub fn linear_combination_1(a: (Scalar, Gej), b: Scalar) -> Gej {
     todo!()
@@ -217,5 +224,14 @@ pub fn scalar_square(a: Scalar) -> Scalar {
 
 /// Multiply a point by a scalar.
 pub fn scale(a: Scalar, b: Gej) -> Gej {
+    todo!()
+}
+
+/// Algebraically distribute a field element over the secp256k1 curve as defined in
+/// ["Indifferentiable Hashing to Barreto-Naehrig Curves" by Pierre-Alain Fouque, Mehdi Tibouchi](https://inria.hal.science/hal-01094321/file/FT12.pdf).
+///
+/// While this by iteslf is not a cryptographic hash function, it can be used as a subrotuine
+/// in a [`hash_to_curve`] function. However the distribution only apporaches uniform when it is called twice.
+pub fn swu(a: Fe) -> Ge {
     todo!()
 }
