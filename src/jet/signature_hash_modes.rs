@@ -43,6 +43,18 @@ pub fn build_tapleaf_simplicity(a: u256) -> u256 {
     todo!()
 }
 
+/// Implementation of `taproot_tweak_pubkey` from BIP-0341.
+///
+/// ## Panics
+/// 1. The input x-only public key is off curve or exceeds the field size.
+/// 2. The internal hash value `t` exceeds the secp256k1 group order.
+/// 3. The generated tweaked point is infinity, and thus has no valid x-only public key.
+///
+/// Note that situations 2 and 3 are cryptographically impossible to occur.
+pub fn build_taptweak(a: Pubkey, b: u256) -> u256 {
+    todo!()
+}
+
 /// Return the SHA256 hash of the serialization of each input UTXO's asset and amount fields.
 pub fn input_amounts_hash() -> u256 {
     todo!()

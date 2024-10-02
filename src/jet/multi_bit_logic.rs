@@ -134,182 +134,182 @@ pub fn eq_256(a: u256, b: u256) -> bool {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 1-bit  value into the 16-bit value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 1-bit  value into a 16-bit value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_left_shift_16_1(a: u16, b: u1) -> (u1, u16) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 2-bit  value into the 16-bit value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 2-bit  value into a 16-bit value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_left_shift_16_2(a: u16, b: u2) -> (u2, u16) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 4-bit  value into the 16-bit value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 4-bit  value into a 16-bit value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_left_shift_16_4(a: u16, b: u4) -> (u4, u16) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 8-bit  value into the 16-bit value. Return the shifted value and the 8  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 8-bit  value into a 16-bit value. Return the shifted value and the 8  bits that were shifted out.
 pub fn full_left_shift_16_8(a: u16, b: u8) -> (u8, u16) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 1-bit  value into the 32-bit value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 1-bit  value into a 32-bit value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_left_shift_32_1(a: u32, b: u1) -> (u1, u32) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 2-bit  value into the 32-bit value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 2-bit  value into a 32-bit value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_left_shift_32_2(a: u32, b: u2) -> (u2, u32) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 4-bit  value into the 32-bit value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 4-bit  value into a 32-bit value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_left_shift_32_4(a: u32, b: u4) -> (u4, u32) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 8-bit  value into the 32-bit value. Return the shifted value and the 8  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 8-bit  value into a 32-bit value. Return the shifted value and the 8  bits that were shifted out.
 pub fn full_left_shift_32_8(a: u32, b: u8) -> (u8, u32) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 16-bit value into the 32-bit value. Return the shifted value and the 16 bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 16-bit value into a 32-bit value. Return the shifted value and the 16 bits that were shifted out.
 pub fn full_left_shift_32_16(a: u32, b: u16) -> (u16, u32) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 1-bit  value into the 64-bit value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 1-bit  value into a 64-bit value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_left_shift_64_1(a: u64, b: u1) -> (u1, u64) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 2-bit  value into the 64-bit value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 2-bit  value into a 64-bit value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_left_shift_64_2(a: u64, b: u2) -> (u2, u64) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 4-bit  value into the 64-bit value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 4-bit  value into a 64-bit value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_left_shift_64_4(a: u64, b: u4) -> (u4, u64) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 8-bit  value into the 64-bit value. Return the shifted value and the 8  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 8-bit  value into a 64-bit value. Return the shifted value and the 8  bits that were shifted out.
 pub fn full_left_shift_64_8(a: u64, b: u8) -> (u8, u64) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 16-bit value into the 64-bit value. Return the shifted value and the 16 bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 16-bit value into a 64-bit value. Return the shifted value and the 16 bits that were shifted out.
 pub fn full_left_shift_64_16(a: u64, b: u16) -> (u16, u64) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 32-bit value into the 64-bit value. Return the shifted value and the 32 bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 32-bit value into a 64-bit value. Return the shifted value and the 32 bits that were shifted out.
 pub fn full_left_shift_64_32(a: u64, b: u32) -> (u32, u64) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 1-bit  value into the 8-bit  value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 1-bit  value into a 8-bit  value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_left_shift_8_1(a: u8, b: u1) -> (u1, u8) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 2-bit  value into the 8-bit  value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 2-bit  value into a 8-bit  value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_left_shift_8_2(a: u8, b: u2) -> (u2, u8) {
     todo!()
 }
 
-/// Helper for left-shifting  bits. The bits are shifted from the 4-bit  value into the 8-bit  value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for left-shifting  bits. The bits are shifted from a 4-bit  value into a 8-bit  value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_left_shift_8_4(a: u8, b: u4) -> (u4, u8) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 1-bit  value into the 16-bit value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 1-bit  value into a 16-bit value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_right_shift_16_1(a: u1, b: u16) -> (u16, u1) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 2-bit  value into the 16-bit value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 2-bit  value into a 16-bit value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_right_shift_16_2(a: u2, b: u16) -> (u16, u2) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 4-bit  value into the 16-bit value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 4-bit  value into a 16-bit value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_right_shift_16_4(a: u4, b: u16) -> (u16, u4) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 8-bit  value into the 16-bit value. Return the shifted value and the 8  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 8-bit  value into a 16-bit value. Return the shifted value and the 8  bits that were shifted out.
 pub fn full_right_shift_16_8(a: u8, b: u16) -> (u16, u8) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 1-bit  value into the 32-bit value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 1-bit  value into a 32-bit value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_right_shift_32_1(a: u1, b: u32) -> (u32, u1) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 2-bit  value into the 32-bit value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 2-bit  value into a 32-bit value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_right_shift_32_2(a: u2, b: u32) -> (u32, u2) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 4-bit  value into the 32-bit value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 4-bit  value into a 32-bit value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_right_shift_32_4(a: u4, b: u32) -> (u32, u4) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 8-bit  value into the 32-bit value. Return the shifted value and the 8  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 8-bit  value into a 32-bit value. Return the shifted value and the 8  bits that were shifted out.
 pub fn full_right_shift_32_8(a: u8, b: u32) -> (u32, u8) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 16-bit value into the 32-bit value. Return the shifted value and the 16 bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 16-bit value into a 32-bit value. Return the shifted value and the 16 bits that were shifted out.
 pub fn full_right_shift_32_16(a: u16, b: u32) -> (u32, u16) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 1-bit  value into the 64-bit value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 1-bit  value into a 64-bit value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_right_shift_64_1(a: u1, b: u64) -> (u64, u1) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 2-bit  value into the 64-bit value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 2-bit  value into a 64-bit value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_right_shift_64_2(a: u2, b: u64) -> (u64, u2) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 4-bit  value into the 64-bit value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 4-bit  value into a 64-bit value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_right_shift_64_4(a: u4, b: u64) -> (u64, u4) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 8-bit  value into the 64-bit value. Return the shifted value and the 8  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 8-bit  value into a 64-bit value. Return the shifted value and the 8  bits that were shifted out.
 pub fn full_right_shift_64_8(a: u8, b: u64) -> (u64, u8) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 16-bit value into the 64-bit value. Return the shifted value and the 16 bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 16-bit value into a 64-bit value. Return the shifted value and the 16 bits that were shifted out.
 pub fn full_right_shift_64_16(a: u16, b: u64) -> (u64, u16) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 32-bit value into the 64-bit value. Return the shifted value and the 32 bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 32-bit value into a 64-bit value. Return the shifted value and the 32 bits that were shifted out.
 pub fn full_right_shift_64_32(a: u32, b: u64) -> (u64, u32) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 1-bit  value into the 8-bit  value. Return the shifted value and the 1  bit  that was  shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 1-bit  value into a 8-bit  value. Return the shifted value and the 1  bit  that was  shifted out.
 pub fn full_right_shift_8_1(a: u1, b: u8) -> (u8, u1) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 2-bit  value into the 8-bit  value. Return the shifted value and the 2  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 2-bit  value into a 8-bit  value. Return the shifted value and the 2  bits that were shifted out.
 pub fn full_right_shift_8_2(a: u2, b: u8) -> (u8, u2) {
     todo!()
 }
 
-/// Helper for right-shifting bits. The bits are shifted from the 4-bit  value into the 8-bit  value. Return the shifted value and the 4  bits that were shifted out.
+/// Helper for right-shifting bits. The bits are shifted from a 4-bit  value into a 8-bit  value. Return the shifted value and the 4  bits that were shifted out.
 pub fn full_right_shift_8_4(a: u4, b: u8) -> (u8, u4) {
     todo!()
 }

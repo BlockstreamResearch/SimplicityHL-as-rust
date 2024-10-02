@@ -101,7 +101,7 @@ pub fn genesis_block_hash() -> u256 {
 
 /// Return the asset id and the asset amount at the given input index.
 ///
-/// Return `None` is the input does not exist.
+/// Return `None` if the input does not exist.
 pub fn input_amount(a: u32) -> Option<(Asset1, Amount1)> {
     todo!()
 }

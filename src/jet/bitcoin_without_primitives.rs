@@ -19,3 +19,8 @@ pub fn parse_lock(a: u32) -> Either<Height,Time> {
 pub fn parse_sequence(a: u32) -> Option<Either<Distance,Duration>> {
     todo!()
 }
+
+/// Create a SHA256 context, initialized with a "TapData" tag.
+pub fn tapdata_init() -> Ctx8 {
+    todo!()
+}
