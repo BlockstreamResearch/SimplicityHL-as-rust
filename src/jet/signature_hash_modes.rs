@@ -12,11 +12,19 @@ use super::*;
 /// Continue a SHA256 hash with an optional hash by appending the following:
 /// - If there is no hash, then the byte `0x00`.
 /// - If there is a hash, then the byte `0x01` followed by the given hash (32 bytes).
+///
+/// ## Cost
+///
+/// 241 mWU _(milli weight units)_
 pub fn annex_hash(a: Ctx8, b: Option<u256>) -> Ctx8 {
     todo!()
 }
 
 /// Continue a SHA256 hash with the serialization of a confidential asset followed by the serialization of a amount.
+///
+/// ## Cost
+///
+/// 308 mWU _(milli weight units)_
 pub fn asset_amount_hash(a: Ctx8, b: Asset1, c: Amount1) -> Ctx8 {
     todo!()
 }
@@ -28,6 +36,10 @@ pub fn asset_amount_hash(a: Ctx8, b: Asset1, c: Amount1) -> Ctx8 {
 /// - The lexicographically larger of the two inputs (32 bytes).
 ///
 /// This builds a taproot from two branches.
+///
+/// ## Cost
+///
+/// 2563 mWU _(milli weight units)_
 pub fn build_tapbranch(a: u256, b: u256) -> u256 {
     todo!()
 }
@@ -39,6 +51,10 @@ pub fn build_tapbranch(a: u256, b: u256) -> u256 {
 /// - The lexicographically larger of the two inputs (32 bytes).
 ///
 /// This builds a taproot from two branches.
+///
+/// ## Cost
+///
+/// 1843 mWU _(milli weight units)_
 pub fn build_tapleaf_simplicity(a: u256) -> u256 {
     todo!()
 }
@@ -51,11 +67,19 @@ pub fn build_tapleaf_simplicity(a: u256) -> u256 {
 /// 3. The generated tweaked point is infinity, and thus has no valid x-only public key.
 ///
 /// Note that situations 2 and 3 are cryptographically impossible to occur.
+///
+/// ## Cost
+///
+/// 92813 mWU _(milli weight units)_
 pub fn build_taptweak(a: Pubkey, b: u256) -> u256 {
     todo!()
 }
 
 /// Return the SHA256 hash of the serialization of each input UTXO's asset and amount fields.
+///
+/// ## Cost
+///
+/// 140 mWU _(milli weight units)_
 pub fn input_amounts_hash() -> u256 {
     todo!()
 }
@@ -63,6 +87,10 @@ pub fn input_amounts_hash() -> u256 {
 /// Return the SHA256 hash of the concatenation of the following for every input:
 /// - If the input has no annex, or isn't a taproot spend, then the byte `0x00`.
 /// - If the input has an annex, then the byte `0x01` followed by the SHA256 hash of the annex (32 bytes).
+///
+/// ## Cost
+///
+/// 155 mWU _(milli weight units)_
 pub fn input_annexes_hash() -> u256 {
     todo!()
 }
@@ -77,6 +105,10 @@ pub fn input_annexes_hash() -> u256 {
 /// - If the input has an annex, then the byte `0x01` followed by the SHA256 hash of the annex (32 bytes).
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 965 mWU _(milli weight units)_
 pub fn input_hash(a: u32) -> Option<u256> {
     todo!()
 }
@@ -88,6 +120,10 @@ pub fn input_hash(a: u32) -> Option<u256> {
 /// - The input's previous transaction index in big endian format (4 bytes).
 ///
 /// IMPORTANT: the index is serialized in big endian format rather than little endian format.
+///
+/// ## Cost
+///
+/// 142 mWU _(milli weight units)_
 pub fn input_outpoints_hash() -> u256 {
     todo!()
 }
@@ -96,11 +132,19 @@ pub fn input_outpoints_hash() -> u256 {
 ///
 /// Note that if an input's UTXO uses segwit, then it's scriptSig will necessarily be the empty string. In
 /// such cases we still use the SHA256 hash of the empty string.
+///
+/// ## Cost
+///
+/// 138 mWU _(milli weight units)_
 pub fn input_script_sigs_hash() -> u256 {
     todo!()
 }
 
 /// Return the SHA256 hash of the concatenation of the SHA256 hash of each input UTXO's scriptPubKey.
+///
+/// ## Cost
+///
+/// 137 mWU _(milli weight units)_
 pub fn input_scripts_hash() -> u256 {
     todo!()
 }
@@ -109,6 +153,10 @@ pub fn input_scripts_hash() -> u256 {
 /// - The input's sequence number in big endian format (4 bytes).
 ///
 /// IMPORTANT, the sequence number is serialized in big endian format rather than little endian format.
+///
+/// ## Cost
+///
+/// 142 mWU _(milli weight units)_
 pub fn input_sequences_hash() -> u256 {
     todo!()
 }
@@ -118,6 +166,10 @@ pub fn input_sequences_hash() -> u256 {
 /// - The SHA256 hash of the input UTXO's scriptPubKey.
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 1996 mWU _(milli weight units)_
 pub fn input_utxo_hash(a: u32) -> Option<u256> {
     todo!()
 }
@@ -125,6 +177,10 @@ pub fn input_utxo_hash(a: u32) -> Option<u256> {
 /// Return the SHA256 hash of the following:
 /// - The result of [`input_amounts_hash`] (32 bytes).
 /// - The result of [`input_scripts_hash`] (32 bytes).
+///
+/// ## Cost
+///
+/// 140 mWU _(milli weight units)_
 pub fn input_utxos_hash() -> u256 {
     todo!()
 }
@@ -133,6 +189,10 @@ pub fn input_utxos_hash() -> u256 {
 /// - The result of [`input_outpoints_hash`] (32 bytes).
 /// - The result of [`input_sequences_hash`] (32 bytes).
 /// - The result of [`input_annexes_hash`] (32 bytes).
+///
+/// ## Cost
+///
+/// 154 mWU _(milli weight units)_
 pub fn inputs_hash() -> u256 {
     todo!()
 }
@@ -150,6 +210,10 @@ pub fn inputs_hash() -> u256 {
 /// the vase as the explicit 0 amount, (i.e. `0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00`).
 ///
 /// Note, the issuance asset id is serialized in the same format as an explicit asset id would be.
+///
+/// ## Cost
+///
+/// 139 mWU _(milli weight units)_
 pub fn issuance_asset_amounts_hash() -> u256 {
     todo!()
 }
@@ -163,6 +227,10 @@ pub fn issuance_asset_amounts_hash() -> u256 {
 ///
 /// Note that if the issuance is a new issuance then the blinding nonce field is 32 `0x00` bytes and new issuance's
 /// contract hash.
+///
+/// ## Cost
+///
+/// 129 mWU _(milli weight units)_
 pub fn issuance_blinding_entropy_hash() -> u256 {
     todo!()
 }
@@ -191,6 +259,10 @@ pub fn issuance_blinding_entropy_hash() -> u256 {
 ///     nonce field (32 bytes) and the reissuance's entropy field (32 bytes).
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 3738 mWU _(milli weight units)_
 pub fn issuance_hash(a: u32) -> Option<u256> {
     todo!()
 }
@@ -202,6 +274,10 @@ pub fn issuance_hash(a: u32) -> Option<u256> {
 /// Note that each the range proof is considered to be the empty string in the case there is no issuance, or if the
 /// asset or token amount doesn't exist (i.e is null). The SHA256 hash of the empty string is still used in these
 /// cases.
+///
+/// ## Cost
+///
+/// 129 mWU _(milli weight units)_
 pub fn issuance_range_proofs_hash() -> u256 {
     todo!()
 }
@@ -218,6 +294,10 @@ pub fn issuance_range_proofs_hash() -> u256 {
 /// the vase as the explicit 0 amount, (i.e. `0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00`).
 ///
 /// Note, the issuance token id is serialized in the same format as an explicit asset id would be.
+///
+/// ## Cost
+///
+/// 138 mWU _(milli weight units)_
 pub fn issuance_token_amounts_hash() -> u256 {
     todo!()
 }
@@ -227,11 +307,19 @@ pub fn issuance_token_amounts_hash() -> u256 {
 /// - The result of [`issuance_token_amounts_hash`] (32 bytes).
 /// - The result of [`issuance_range_proofs_hash`] (32 bytes).
 /// - The result of [`issuance_blinding_entropy_hash`] (32 bytes).
+///
+/// ## Cost
+///
+/// 141 mWU _(milli weight units)_
 pub fn issuances_hash() -> u256 {
     todo!()
 }
 
 /// Continue the SHA256 hash with the serialization of an optional nonce.
+///
+/// ## Cost
+///
+/// 317 mWU _(milli weight units)_
 pub fn nonce_hash(a: Ctx8, b: Option<Nonce>) -> Ctx8 {
     todo!()
 }
@@ -241,11 +329,19 @@ pub fn nonce_hash(a: Ctx8, b: Option<Nonce>) -> Ctx8 {
 /// - If the input is a pegin, then the byte `0x01` followed by the given parent genesis hash (32 bytes).
 /// - The input's previous transaction id (32 bytes).
 /// - The input's previous transaction index in big endian format (4 bytes).
+///
+/// ## Cost
+///
+/// 319 mWU _(milli weight units)_
 pub fn outpoint_hash(a: Ctx8, b: Option<u256>, c: Outpoint) -> Ctx8 {
     todo!()
 }
 
 /// Return the SHA256 hash of the serialization of each output's asset and amount fields.
+///
+/// ## Cost
+///
+/// 140 mWU _(milli weight units)_
 pub fn output_amounts_hash() -> u256 {
     todo!()
 }
@@ -259,11 +355,19 @@ pub fn output_amounts_hash() -> u256 {
 /// Return `None` if the output does not exist.
 ///
 /// Note: the result of [`output_surjection_proofs_hash`] is specifically excluded because surjection proofs are dependent on the inputs as well as the output.
+///
+/// ## Cost
+///
+/// 2849 mWU _(milli weight units)_
 pub fn output_hash(a: u32) -> Option<u256> {
     todo!()
 }
 
 /// Return the SHA256 hash of the serialization of each output's nonce field.
+///
+/// ## Cost
+///
+/// 151 mWU _(milli weight units)_
 pub fn output_nonces_hash() -> u256 {
     todo!()
 }
@@ -271,11 +375,19 @@ pub fn output_nonces_hash() -> u256 {
 /// Return the SHA256 hash of the concatenation of the SHA256 hash of each output's range proof.
 ///
 /// Note that if the output's amount is explicit then the range proof is considered the empty string.
+///
+/// ## Cost
+///
+/// 136 mWU _(milli weight units)_
 pub fn output_range_proofs_hash() -> u256 {
     todo!()
 }
 
 /// Return the SHA256 hash of the concatenation of the SHA256 hash of each output's scriptPubKey.
+///
+/// ## Cost
+///
+/// 142 mWU _(milli weight units)_
 pub fn output_scripts_hash() -> u256 {
     todo!()
 }
@@ -283,6 +395,10 @@ pub fn output_scripts_hash() -> u256 {
 /// Return the SHA256 hash of the concatenation of the SHA256 hash of each output's surjection proof.
 ///
 /// Note that if the output's asset is explicit then the surjection proof is considered the empty string.
+///
+/// ## Cost
+///
+/// 138 mWU _(milli weight units)_
 pub fn output_surjection_proofs_hash() -> u256 {
     todo!()
 }
@@ -294,6 +410,10 @@ pub fn output_surjection_proofs_hash() -> u256 {
 /// - The result of [`output_range_proofs_hash`] (32 bytes).
 ///
 /// Note: the result of [`output_surjection_proofs_hash`] is specifically excluded because surjection proofs are dependent on the inputs as well as the output. See also [`tx_hash`].
+///
+/// ## Cost
+///
+/// 135 mWU _(milli weight units)_
 pub fn outputs_hash() -> u256 {
     todo!()
 }
@@ -306,6 +426,10 @@ pub fn outputs_hash() -> u256 {
 /// - The result of [`current_index`] (Note: this is in big endian format) (4 bytes).
 ///
 /// Note: the two copies of the [`genesis_block_hash`] values effectively makes this result a BIP-340 style tagged hash.
+///
+/// ## Cost
+///
+/// 133 mWU _(milli weight units)_
 pub fn sig_all_hash() -> u256 {
     todo!()
 }
@@ -314,6 +438,10 @@ pub fn sig_all_hash() -> u256 {
 /// - The result of [`tapleaf_hash`] (32 bytes).
 /// - The result of [`tappath_hash`] (32 bytes).
 /// - The result of [`internal_key`] (32 bytes).
+///
+/// ## Cost
+///
+/// 162 mWU _(milli weight units)_
 pub fn tap_env_hash() -> u256 {
     todo!()
 }
@@ -326,6 +454,10 @@ pub fn tap_env_hash() -> u256 {
 /// - The result of [`script_cmr`] (32 bytes).
 ///
 /// Note: this matches Element's modified BIP-0341 definition of tapleaf hash.
+///
+/// ## Cost
+///
+/// 136 mWU _(milli weight units)_
 pub fn tapleaf_hash() -> u256 {
     todo!()
 }
@@ -333,6 +465,10 @@ pub fn tapleaf_hash() -> u256 {
 /// Return a hash of the current input's control block excluding the leaf version and the taproot internal key.
 ///
 /// Using the notation of BIP-0341, it returns the SHA256 hash of c[33: 33 + 32m].
+///
+/// ## Cost
+///
+/// 143 mWU _(milli weight units)_
 pub fn tappath_hash() -> u256 {
     todo!()
 }
@@ -345,6 +481,10 @@ pub fn tappath_hash() -> u256 {
 /// - The result of [`issuances_hash`] (32 bytes).
 /// - The result of [`output_surjection_proofs_hash`] (32 bytes).
 /// - The result of [`input_utxos_hash`] (32 bytes).
+///
+/// ## Cost
+///
+/// 143 mWU _(milli weight units)_
 pub fn tx_hash() -> u256 {
     todo!()
 }

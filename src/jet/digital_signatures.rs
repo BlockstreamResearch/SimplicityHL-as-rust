@@ -13,6 +13,10 @@ use super::*;
 ///
 /// ## Panics
 /// The assertion fails.
+///
+/// ## Cost
+///
+/// 49087 mWU _(milli weight units)_
 pub fn bip_0340_verify(a: (Pubkey, Message), b: Signature) {
     todo!()
 }

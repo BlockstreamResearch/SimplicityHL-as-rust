@@ -10,71 +10,127 @@
 use super::*;
 
 /// Return the [`input_amount`] at the [`current_index`].
+///
+/// ## Cost
+///
+/// 225 mWU _(milli weight units)_
 pub fn current_amount() -> (Asset1, Amount1) {
     todo!()
 }
 
 /// Return the [`input_annex_hash`] at th [`current_index`].
+///
+/// ## Cost
+///
+/// 79 mWU _(milli weight units)_
 pub fn current_annex_hash() -> Option<u256> {
     todo!()
 }
 
 /// Return the [`input_asset`] at the [`current_index`].
+///
+/// ## Cost
+///
+/// 171 mWU _(milli weight units)_
 pub fn current_asset() -> Asset1 {
     todo!()
 }
 
 /// Return the index of the current txin.
+///
+/// ## Cost
+///
+/// 88 mWU _(milli weight units)_
 pub fn current_index() -> u32 {
     todo!()
 }
 
 /// Return the [`issuance_asset_amount`] at the [`current_index`].
+///
+/// ## Cost
+///
+/// 165 mWU _(milli weight units)_
 pub fn current_issuance_asset_amount() -> Option<Amount1> {
     todo!()
 }
 
 /// Return the [`issuance_asset_proof`]  at the [`current_index`].
+///
+/// ## Cost
+///
+/// 140 mWU _(milli weight units)_
 pub fn current_issuance_asset_proof() -> u256 {
     todo!()
 }
 
 /// Return the [`issuance_token_amount`] at the [`current_index`].
+///
+/// ## Cost
+///
+/// 188 mWU _(milli weight units)_
 pub fn current_issuance_token_amount() -> Option<TokenAmount1> {
     todo!()
 }
 
 /// Return the [`issuance_token_proof`]  at the [`current_index`].
+///
+/// ## Cost
+///
+/// 144 mWU _(milli weight units)_
 pub fn current_issuance_token_proof() -> u256 {
     todo!()
 }
 
 /// Return the [`new_issuance_contract`] at the [`current_index`].
+///
+/// ## Cost
+///
+/// 145 mWU _(milli weight units)_
 pub fn current_new_issuance_contract() -> Option<u256> {
     todo!()
 }
 
 /// Return the [`input_pegin`] at the [`current_index`].
+///
+/// ## Cost
+///
+/// 147 mWU _(milli weight units)_
 pub fn current_pegin() -> Option<u256> {
     todo!()
 }
 
 /// Return the previous outpoint of the current txin.
+///
+/// ## Cost
+///
+/// 156 mWU _(milli weight units)_
 pub fn current_prev_outpoint() -> Outpoint {
     todo!()
 }
 
 /// Return the [`reissuance_blinding`] at the [`current_index`].
+///
+/// ## Cost
+///
+/// 94 mWU _(milli weight units)_
 pub fn current_reissuance_blinding() -> Option<ExplicitNonce> {
     todo!()
 }
 
 /// Return the [`reissuance_entropy`]  at the [`current_index`].
+///
+/// ## Cost
+///
+/// 85 mWU _(milli weight units)_
 pub fn current_reissuance_entropy() -> Option<u256> {
     todo!()
 }
 
 /// Return the SHA256 hash of the scriptPubKey of the UTXO of the current txin.
+///
+/// ## Cost
+///
+/// 134 mWU _(milli weight units)_
 pub fn current_script_hash() -> u256 {
     todo!()
 }
@@ -82,6 +138,10 @@ pub fn current_script_hash() -> u256 {
 /// Return the SHA256 hash of the scriptSig of the current txin.
 ///
 /// SegWit UTXOs enforce scriptSig to be the empty string. In such cases, we return the SHA256 hash of the empty string.
+///
+/// ## Cost
+///
+/// 139 mWU _(milli weight units)_
 pub fn current_script_sig_hash() -> u256 {
     todo!()
 }
@@ -90,11 +150,19 @@ pub fn current_script_sig_hash() -> u256 {
 ///
 /// Use this jet to obtain the raw, encoded sequence number.
 /// Use [`tx_lock_distance`] to obtain a relative block height, or [`tx_lock_duration`] to obtain a relative UNIX timestamp, in a safe manner.
+///
+/// ## Cost
+///
+/// 89 mWU _(milli weight units)_
 pub fn current_sequence() -> u32 {
     todo!()
 }
 
 /// Return the SHA256 hash of the genesis block.
+///
+/// ## Cost
+///
+/// 148 mWU _(milli weight units)_
 pub fn genesis_block_hash() -> u256 {
     todo!()
 }
@@ -102,6 +170,10 @@ pub fn genesis_block_hash() -> u256 {
 /// Return the asset id and the asset amount at the given input index.
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 285 mWU _(milli weight units)_
 pub fn input_amount(a: u32) -> Option<(Asset1, Amount1)> {
     todo!()
 }
@@ -110,6 +182,10 @@ pub fn input_amount(a: u32) -> Option<(Asset1, Amount1)> {
 /// - Return `Some(Some(x))` if the input has an annex that hashes to `x`.
 /// - Return `Some(None`) if the input has no annex.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 90 mWU _(milli weight units)_
 pub fn input_annex_hash(a: u32) -> Option<Option<u256>> {
     todo!()
 }
@@ -117,6 +193,10 @@ pub fn input_annex_hash(a: u32) -> Option<Option<u256>> {
 /// Return the asset id of the input at the given index.
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 162 mWU _(milli weight units)_
 pub fn input_asset(a: u32) -> Option<Asset1> {
     todo!()
 }
@@ -125,6 +205,10 @@ pub fn input_asset(a: u32) -> Option<Asset1> {
 ///
 /// - Return `Some(None)` if the input is not a peg-in.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 151 mWU _(milli weight units)_
 pub fn input_pegin(a: u32) -> Option<Option<u256>> {
     todo!()
 }
@@ -132,6 +216,10 @@ pub fn input_pegin(a: u32) -> Option<Option<u256>> {
 /// Return the previous outpoint of the input at the given index.
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 160 mWU _(milli weight units)_
 pub fn input_prev_outpoint(a: u32) -> Option<Outpoint> {
     todo!()
 }
@@ -139,6 +227,10 @@ pub fn input_prev_outpoint(a: u32) -> Option<Outpoint> {
 /// Return the SHA256 hash of the scriptPubKey of the UTXO of the input at the given index.
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 147 mWU _(milli weight units)_
 pub fn input_script_hash(a: u32) -> Option<u256> {
     todo!()
 }
@@ -148,6 +240,10 @@ pub fn input_script_hash(a: u32) -> Option<u256> {
 /// Return `None` if the input does not exist.
 ///
 /// SegWit UTXOs enforce scriptSig to be the empty string. In such cases, we return the SHA256 hash of the empty string.
+///
+/// ## Cost
+///
+/// 153 mWU _(milli weight units)_
 pub fn input_script_sig_hash(a: u32) -> Option<u256> {
     todo!()
 }
@@ -155,6 +251,10 @@ pub fn input_script_sig_hash(a: u32) -> Option<u256> {
 /// Return the nSequence of the input at the given index.
 ///
 /// Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 99 mWU _(milli weight units)_
 pub fn input_sequence(a: u32) -> Option<u32> {
     todo!()
 }
@@ -162,6 +262,10 @@ pub fn input_sequence(a: u32) -> Option<u32> {
 /// Return the internal key of the current input.
 ///
 /// We assume that Simplicity can be spent in Taproot outputs only, so there always exists an internal key.
+///
+/// ## Cost
+///
+/// 152 mWU _(milli weight units)_
 pub fn internal_key() -> Pubkey {
     todo!()
 }
@@ -170,6 +274,10 @@ pub fn internal_key() -> Pubkey {
 ///
 /// - Return `Some(None)` if the input does not have an issuance.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 162 mWU _(milli weight units)_
 pub fn issuance_asset_amount(a: u32) -> Option<Option<Amount1>> {
     todo!()
 }
@@ -178,6 +286,10 @@ pub fn issuance_asset_amount(a: u32) -> Option<Option<Amount1>> {
 ///
 /// - Return the hash of the empty string if the input does not have an issuance.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 150 mWU _(milli weight units)_
 pub fn issuance_asset_proof(a: u32) -> Option<u256> {
     todo!()
 }
@@ -187,6 +299,10 @@ pub fn issuance_asset_proof(a: u32) -> Option<u256> {
 /// - Return `Some(Some(Right(0)))` if the input is itself a reissuance.
 /// - Return `Some(None)` if the input does not have an issuance.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 196 mWU _(milli weight units)_
 pub fn issuance_token_amount(a: u32) -> Option<Option<TokenAmount1>> {
     todo!()
 }
@@ -195,11 +311,19 @@ pub fn issuance_token_amount(a: u32) -> Option<Option<TokenAmount1>> {
 ///
 /// - Return the hash of the empty string if the input does not have an issuance.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 150 mWU _(milli weight units)_
 pub fn issuance_token_proof(a: u32) -> Option<u256> {
     todo!()
 }
 
 /// Return the lock time of the transaction.
+///
+/// ## Cost
+///
+/// 85 mWU _(milli weight units)_
 pub fn lock_time() -> Lock {
     todo!()
 }
@@ -208,16 +332,28 @@ pub fn lock_time() -> Lock {
 ///
 /// - Return `Some(None)` if the input does not have a new issuance.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 157 mWU _(milli weight units)_
 pub fn new_issuance_contract(a: u32) -> Option<Option<u256>> {
     todo!()
 }
 
 /// Return the number of inputs of the transaction.
+///
+/// ## Cost
+///
+/// 86 mWU _(milli weight units)_
 pub fn num_inputs() -> u32 {
     todo!()
 }
 
 /// Return the number of outputs of the transaction.
+///
+/// ## Cost
+///
+/// 79 mWU _(milli weight units)_
 pub fn num_outputs() -> u32 {
     todo!()
 }
@@ -225,6 +361,10 @@ pub fn num_outputs() -> u32 {
 /// Return the asset amount of the output at the given index.
 ///
 /// Return `None` if the output does not exist.
+///
+/// ## Cost
+///
+/// 298 mWU _(milli weight units)_
 pub fn output_amount(a: u32) -> Option<(Asset1, Amount1)> {
     todo!()
 }
@@ -232,6 +372,10 @@ pub fn output_amount(a: u32) -> Option<(Asset1, Amount1)> {
 /// Return the asset id of the output at the given index.
 ///
 /// Return `None` if the output does not exist.
+///
+/// ## Cost
+///
+/// 170 mWU _(milli weight units)_
 pub fn output_asset(a: u32) -> Option<Asset1> {
     todo!()
 }
@@ -239,6 +383,10 @@ pub fn output_asset(a: u32) -> Option<Asset1> {
 /// Check if the output at the given index is a fee output.
 ///
 /// Return `None` if the output does not exist.
+///
+/// ## Cost
+///
+/// 92 mWU _(milli weight units)_
 pub fn output_is_fee(a: u32) -> Option<bool> {
     todo!()
 }
@@ -247,6 +395,10 @@ pub fn output_is_fee(a: u32) -> Option<bool> {
 ///
 /// - Return `Some(None)` if the output does not have a nonce.
 /// - Return `None` if the output does not exist.
+///
+/// ## Cost
+///
+/// 196 mWU _(milli weight units)_
 pub fn output_nonce(a: u32) -> Option<Option<Nonce>> {
     todo!()
 }
@@ -265,6 +417,10 @@ pub fn output_nonce(a: u32) -> Option<Option<Nonce>> {
 /// - Return `None` if the output is not a null data output.
 ///
 /// Use this jet to read peg-out data from an output.
+///
+/// ## Cost
+///
+/// 87 mWU _(milli weight units)_
 pub fn output_null_datum(a: u32, b: u32) -> Option<Option<Either<(u2, u256),Either<u1,u4>>>> {
     todo!()
 }
@@ -272,6 +428,10 @@ pub fn output_null_datum(a: u32, b: u32) -> Option<Option<Either<(u2, u256),Eith
 /// Return the SHA256 hash of the range proof of the output at the given index.
 ///
 /// Return `None` if the output does not exist.
+///
+/// ## Cost
+///
+/// 154 mWU _(milli weight units)_
 pub fn output_range_proof(a: u32) -> Option<u256> {
     todo!()
 }
@@ -279,6 +439,10 @@ pub fn output_range_proof(a: u32) -> Option<u256> {
 /// Return the SHA256 hash of the scriptPubKey of the output at the given index.
 ///
 /// Return `None` if the output does not exist.
+///
+/// ## Cost
+///
+/// 151 mWU _(milli weight units)_
 pub fn output_script_hash(a: u32) -> Option<u256> {
     todo!()
 }
@@ -286,6 +450,10 @@ pub fn output_script_hash(a: u32) -> Option<u256> {
 /// Return the SHA256 hash of the surjection proof of the output at the given index.
 ///
 /// Return `None` if the output does not exist.
+///
+/// ## Cost
+///
+/// 151 mWU _(milli weight units)_
 pub fn output_surjection_proof(a: u32) -> Option<u256> {
     todo!()
 }
@@ -294,6 +462,10 @@ pub fn output_surjection_proof(a: u32) -> Option<u256> {
 ///
 /// - Return `Some(None)` if the input does not have a reissuance.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 91 mWU _(milli weight units)_
 pub fn reissuance_blinding(a: u32) -> Option<Option<ExplicitNonce>> {
     todo!()
 }
@@ -302,6 +474,10 @@ pub fn reissuance_blinding(a: u32) -> Option<Option<ExplicitNonce>> {
 ///
 /// - Return `Some(None)` if the input does not have a reissuance.
 /// - Return `None` if the input does not exist.
+///
+/// ## Cost
+///
+/// 93 mWU _(milli weight units)_
 pub fn reissuance_entropy(a: u32) -> Option<Option<u256>> {
     todo!()
 }
@@ -309,6 +485,10 @@ pub fn reissuance_entropy(a: u32) -> Option<Option<u256>> {
 /// Return the CMR of the Simplicity program in the current input.
 ///
 /// This is the CMR of the currently executed Simplicity program.
+///
+/// ## Cost
+///
+/// 136 mWU _(milli weight units)_
 pub fn script_cmr() -> u256 {
     todo!()
 }
@@ -316,6 +496,10 @@ pub fn script_cmr() -> u256 {
 /// Return the tap leaf version of the current input.
 ///
 /// We assume that Simplicity can be spent in Taproot outputs only, so there always exists a tap leaf.
+///
+/// ## Cost
+///
+/// 105 mWU _(milli weight units)_
 pub fn tapleaf_version() -> u8 {
     todo!()
 }
@@ -323,6 +507,10 @@ pub fn tapleaf_version() -> u8 {
 /// Return the SHA256 hash of the tap path of the current input.
 ///
 /// We assume that Simplicity can be spent in Taproot outputs only, so there always exists a tap path.
+///
+/// ## Cost
+///
+/// 83 mWU _(milli weight units)_
 pub fn tappath(a: u8) -> Option<u256> {
     todo!()
 }
@@ -330,16 +518,28 @@ pub fn tappath(a: u8) -> Option<u256> {
 /// Return the total amount of fees paid to the given asset id.
 ///
 /// Return zero for any asset without fees.
+///
+/// ## Cost
+///
+/// 230 mWU _(milli weight units)_
 pub fn total_fee(a: ExplicitAsset) -> ExplicitAmount {
     todo!()
 }
 
 /// Return the transaction ID.
+///
+/// ## Cost
+///
+/// 139 mWU _(milli weight units)_
 pub fn transaction_id() -> u256 {
     todo!()
 }
 
 /// Return the version number of the transaction.
+///
+/// ## Cost
+///
+/// 93 mWU _(milli weight units)_
 pub fn version() -> u32 {
     todo!()
 }
