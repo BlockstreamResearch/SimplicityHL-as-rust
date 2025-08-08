@@ -1,6 +1,6 @@
-//! Interface between Simfony as Rust
+//! Interface between SimplicityHL as Rust
 //!
-//! The [Simfony](https://github.com/BlockstreamResearch/simfony) language feels very similar to Rust.
-//! This crate provides tools to work with Simfony as literal Rust.
+//! The [SimplicityHL](https://github.com/BlockstreamResearch/simplicityhl) language feels very similar to Rust.
+//! This crate provides tools to work with SimplicityHL as literal Rust.
 
 pub mod jet;

@@ -1,11 +1,11 @@
 [package]
-name = "simfony-as-rust"
-version = "0.1.7"
+name = "simplicityhl-as-rust"
+version = "0.1.8"
 edition = "2021"
 authors = ["Christian Lewe <ch_lewe@agdsn.me>"]
-description = "Tools for working with Simfony as literal Rust"
+description = "Tools for working with Simplicity as literal Rust"
 license = "CC0-1.0"
-repository = "https://github.com/uncomputable/simfony-as-rust"
+repository = "https://github.com/blockstreamresearch/simplicityhl-as-rust"
 
 [dependencies]
 either = "1.13.0"
