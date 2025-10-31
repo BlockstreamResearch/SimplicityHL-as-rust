@@ -1,8 +1,8 @@
 [package]
 name = "simplicityhl-as-rust"
-version = "0.1.7"
+version = "0.2.0"
 edition = "2021"
-authors = ["Christian Lewe <ch_lewe@agdsn.me>"]
+authors = ["Christian Lewe <ch_lewe@agdsn.me>", "Andrew Poelstra <apoelstra@blockstream.com>"]
 description = "Tools for working with SimplicityHL as literal Rust"
 license = "CC0-1.0"
 repository = "https://github.com/BlockstreamResearch/SimplicityHL-as-rust"
